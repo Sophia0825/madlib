@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Madlibs - The X Files</title>
+
+	<style type="text/css">
+		h1{
+			text-align: center;
+			color: red;
+		}
+
+		h2{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>THE X FILES</h1>
+
+	<h2>Alien Abduction</h2>
+
+	<p id="madlib"></p>
+
+	<script type="text/javascript">
+		let paragraph = document.querySelector("#madlib");
+		let profession = prompt("Profession:");
+		let verbing1 = prompt("Verb-ing:");
+		let adjective = prompt("Adjective:");
+		let noun = prompt("Noun:");
+		let verbing2 = prompt("Verb-ing:");
+		let sillyword = prompt("Silly word:");
+		let bodypart = prompt("Body part:");
+		let place = prompt("Place:");
+		let color = prompt("Color:");
+		let medicalprocedure = prompt("Medical procedure:");
+		let celebname1 = prompt("Celebrity name:");
+		let celebname2 = prompt("Different celebrity name:");
+
+		message = `As a ${profession} with rich experience in ${verbing1}, I never considered myself a prime candidate to become an FBI agent. However, it all changed on a ${adjective} summer night when I encountered a flying ${noun} while ${verbing2} in my backyard. Before I could yell ${sillyword}, my ${bodypart} got caught in a bright beam of light, and I was teleported to ${place}. There, I saw little ${color} beings performing a ${medicalprocedure} on a person who looked like ${celebname1}. No, it was ${celebname2}!`;
+		paragraph.innerHTML = message;
+	</script>
+</body>
+</html>
